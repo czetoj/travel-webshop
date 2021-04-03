@@ -1,0 +1,3 @@
+<app-data-editor [cols]="cols" [productList]="productList$ | async" (updateProduct)="onUpdate($event)"
+    (deleteProduct)="onDelete($event)" (createProduct)="onCreate($event)">
+</app-data-editor>

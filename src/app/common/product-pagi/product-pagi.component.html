@@ -1,0 +1,14 @@
+<div class="container col-lg-12">
+  <div class="row mx-auto m-o">
+    <div class="col-lg-1"></div>
+    <app-product-card class="col-10 col-md-5 col-lg-2 mx-auto mx-lg-0 mb-4 px-lg-0" [product]="product"
+      *ngFor="let product of paginationNumber(products, index)">
+    </app-product-card>
+  </div>
+  <button class="btn btn-outline-dark" (click)="paginationBack(products)">Vissza</button>
+
+  <button class="btn btn-outline-dark" *ngFor="let button of buttonsNumberArray(products)"
+    [class.active]="index === button"><a (click)="paginationNumber(productList, button)">{{button}}</a></button>
+  <button class="btn btn-outline-dark" (click)="paginationNext(products)">Előre</button>
+
+</div>

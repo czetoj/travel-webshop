@@ -1,0 +1,7 @@
+<nav>
+    <li *ngFor="let item of menuItems" class="nav-item">
+        <a class="nav-link text-white" [routerLink]="item.link">{{ item.text }}</a>
+    </li>
+    <p class="copyright mt-3">&copy; Nyolcas terminál. All Rights
+        Reserved</p>
+</nav>

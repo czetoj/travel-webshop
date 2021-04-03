@@ -1,0 +1,241 @@
+@font-face {
+    src: url(../src/assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+    font-family: "catamaran";
+    font-weight: 100;
+}
+
+@font-face {
+    src: url(../src/assets/fonts/Lato/Lato-Regular.ttf);
+    font-family: "lato";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../src/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
+    font-family: "muli";
+    font-weight: 400;
+}
+
+$mainBlue: rgb(37, 170, 226);
+$mainGrey: rgb(53, 58, 64);
+$mainShadow: 0 0 9px black;
+$mainFont: "catamaran", Arial, Helvetica, sans-serif;
+
+
+body {
+    margin: 0;
+    color: $mainBlue;  
+}
+
+
+/*Navigation*/
+.navbar {
+    box-shadow: $mainShadow;    
+}
+
+.navbar-brand {
+    color:  $mainBlue!important;
+    font-family: $mainFont;
+}
+
+.nav-link {
+    font-family: $mainFont;
+}
+/*Headlines*/
+
+[class^="headline"] {
+    background-attachment: fixed;
+    box-shadow: $mainShadow;
+    height: 300px;
+    width: 100%;
+}
+
+.headline-home{    
+    background-image: url(../src/assets/img/800/home-head.jpg);
+    background-size: 180%;   
+}
+
+.headline-local {
+    background-image: url(https://www.alwayswanderlust.com/wp-content/uploads/2016/11/Europe-Hungary-Budapest-Gelert-Hill-View-Panorama.jpg);
+    background-size: 193%;
+}
+
+.headline-foreign {
+    background-image: url(https://techworld.hu/wp-content/uploads/2019/11/msf.png);
+    background-position: center top;
+    background-size: 138%;
+}
+
+.logo{
+    width: 35%;
+}
+
+/*Cards*/
+
+.card-title {
+    font-family: "lato", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.card-text {
+    font-family: "muli", Arial, Helvetica, sans-serif;
+}
+
+.product-pagi {
+    background-image: url(../src/assets/img/800/bg-pattern.png), linear-gradient(to right, $mainBlue, rgb(200, 200, 200));
+    background-attachment: fixed;
+    
+}
+.card {
+    box-shadow: 0 0 9px grey;
+    border-radius: 10px;
+    background-color: #efefef;        
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.product-salesprice{
+    font-size: 23px;
+    color: green;
+}
+
+.product-stock {
+    font-weight: bold;
+}
+
+/*Titles*/
+
+[class^="title"] {
+    color: $mainBlue;
+    background-color: $mainGrey;
+    box-shadow: $mainShadow;
+    font-family: $mainFont;
+}
+
+/*Product-list*/
+
+[class^="list"] {
+    color: $mainBlue;
+}
+
+.list-title {    
+    font-family: $mainFont;
+}
+
+.list-text {
+    font-family: "lato", Arial, Helvetica, sans-serif;
+}
+
+.product-list {
+    background-color: rgb(73, 78, 84);
+    box-shadow: $mainShadow;
+    .card {
+        background-color: #efefef;
+    }
+}
+
+/*Kapcsolat page*/
+app-kapcsolat {
+    font-family: $mainFont;
+    font-weight: bold;
+    .footer {
+        font-weight: normal;
+    }
+}
+
+/*Admin page*/
+app-admin {
+    font-family: $mainFont;
+    font-weight: bold;
+    .footer {
+        font-weight: normal;
+    }
+}
+
+.table-heads:hover {
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.footer {
+    border-top: 1px solid  rgb(43, 48, 54);
+    box-shadow: $mainShadow;
+    .copyright {
+        font-size: small;
+        font-family: "muli", Arial, Helvetica, sans-serif;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .headline-home {
+        background-size: 130%;
+    }
+    .headline-foreign {
+        background-size: 100%;
+    }
+    .headline-local {
+        background-size: 138%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    [class^="headline"] {
+       height: 400px;  
+    }
+    .headline-home {
+        background-size: 100%;        
+    }
+    .headline-foreign {
+        background-size: 99%;
+    }
+    .headline-local {
+        background-size: 120%;
+    }
+    .logo {
+        width: 25% !important;
+    }
+    .card {
+        box-shadow: none;
+    }
+    .card-title {
+        font-size: medium;
+    }
+    
+    .card-text {
+        font-size: small;
+    }
+
+    .product-salesprice{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .headline-home {
+        background-size: 100%;
+        background-position: 0 500%;
+    }
+    .headline-foreign {
+        background-size: 100%;
+        background-position: 0 150%;
+    }
+    .headline-local {
+        background-size: 138%;
+        background-position: 0 140%;
+    }
+    .logo{
+        width: 20% !important
+    }
+    .card-img-top {
+        height: 170px;
+    }
+}

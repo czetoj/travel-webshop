@@ -1,0 +1,18 @@
+<div class="headline-foreign d-flex flex-column justify-content-center py-5">
+    <img class="logo mx-auto" src="../../assets/img/800/logo.png" alt="logó">
+</div>
+<div class="title-sales text-center py-4 mb-0">
+    <h2 class="text-center">Külföldi utak</h2>
+    <h3>Akciós ajánlataink</h3>
+</div>
+
+<app-product-pagi class="product-pagi text-center d-flex flex-column mx-auto py-5"
+    [products]="productList$ | async | category:1 | sales">
+</app-product-pagi>
+
+<div class="product-list py-5 px-5">
+    <h2 class="list-title text-center">Összes út</h2>
+    <p class="list-text text-center">Keressen ajánlataink között</p>
+    <app-product-list [products]="productList$ | async | category:1"></app-product-list>
+</div>
+<app-footer class="footer nav nav-dark bg-dark py-5 text-center d-flex flex-column"></app-footer>

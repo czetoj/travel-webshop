@@ -1,0 +1,101 @@
+<h1 class="p-3 text-center">Új termék bevitele</h1>
+<br>
+<div class="container col">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th *ngFor="let col of cols">{{ col.text }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td *ngFor="let col of cols">
+                            <input *ngIf="col.editable" [(ngModel)]="productList[productList.length-1][col.key]"
+                                type="text" class="form-control">
+                            <span *ngIf="!col.editable">{{ productList[productList.length-1][col.key] }}</span>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+
+                                <button (click)="onClickCreate(productList[productList.length-1])"
+                                    class="btn btn-primary">
+                                    <i class="fa fa-check">Save</i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h1 class="p-3 text-center">Termékek módosítása</h1>
+<br>
+<div class="col-12 mx-auto row py-2 product-search">
+    <select [(ngModel)]="filterKey" class="form-control col-1 ml-auto">
+        <option *ngFor="let key of productKeys" [value]="key">{{key}}</option>
+    </select>
+    <input [(ngModel)]="phrase" class="form-control mx-1 col-4" type="text" placeholder="Search">
+    <button class="btn btn-outline-primary col-1 mr-auto" type="submit">Keresés</button>
+</div>
+<br>
+<br>
+
+
+<div class="container col">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr class="table-header">
+                        <th class="table-heads" *ngFor="let col of cols" (click)="onChangeSort(col.key)">{{col.text}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        *ngFor="let product of paginationNumber(productList$ | async | lastproductnovisible | universalFilter:filterKey:phrase | sort:sortKey, index)">
+                        <td *ngFor="let col of cols">
+                            <input class="col-12" *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text">
+                            <span *ngIf="!col.editable">{{product[col.key]}}</span>
+                        </td>
+                        <td class="btn-group">
+                            <button (click)="onUpdateClick(product)" class="btn btn-info">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                            <button (click)="onDeleteClick(product)" class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row d-flex justify-content-center align-items-center m-5">
+    <span>Hány termék jelenjen meg:</span>
+    <select [(ngModel)]="pagilength" class="form-control col-1 mr-5 ml-3">
+        <option>5</option>
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+    </select>
+    <div>
+        <button class="btn btn-outline-dark" (click)="paginationBack(productList)">Vissza</button>
+
+        <li class="btn"
+            *ngFor="let button of buttonsNumberArray(productList$ | async | lastproductnovisible | universalFilter:filterKey:phrase | sort:sortKey)"
+            [class.active]="index === button"><a (click)="paginationNumber(productList, button)">{{button}}</a>
+        </li>
+        <button class="btn btn-outline-dark" (click)="paginationNext(productList)">Előre</button>
+    </div>
+
+</div>
+
+
+<app-footer class="footer nav nav-dark bg-dark py-5 text-center d-flex flex-column"></app-footer>
