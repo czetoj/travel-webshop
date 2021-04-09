@@ -8,7 +8,7 @@
   <button class="btn btn-outline-dark" (click)="paginationBack(products)">Vissza</button>
 
   <button class="btn btn-outline-dark" *ngFor="let button of buttonsNumberArray(products)"
-    [class.active]="index === button"><a (click)="paginationNumber(productList, button)">{{button}}</a></button>
+    [class.active]="index === button" (click)="paginationNumber(productList, button)">{{button}}</button>
   <button class="btn btn-outline-dark" (click)="paginationNext(products)">Előre</button>
 
 </div>

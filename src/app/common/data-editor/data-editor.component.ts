@@ -44,7 +44,7 @@ export class DataEditorComponent implements OnInit {
     this.deleteProduct.emit(product)
   }
   onClickCreate(product: Product): void {
-    product.catId = parseInt(product.catId);
+    product.catId = product.catId;
     this.createProduct.emit(product)
   }
   onChangeSort(data: string): void {

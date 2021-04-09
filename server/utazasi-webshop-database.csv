@@ -1,0 +1,52 @@
+uid,catId,name,description,image,price,salesPrice,stock,featured,featured2,active
+1,2,Hosszúhétvége Budapesten,"3 éjszaka 4*-os szállodában, reggelivel.",budapest,92000,82000,10,false,,true
+2,2,Egri borkóstolás,"2 éjszaka 4*-os szállodában, félpanziós ellátással. Szombati esti borkóstolással. 2 fő részére.",eger,66000,58000,8,true,extra,true
+3,2,Sopron óvárosa és a Tűztorony,"2 éjszaka 5*-os szállodában, reggelivel. 2 fő részére.",sopron,82000,72000,14,false,,true
+4,2,"Fertődi kirándulás, az Esterházy-kastély felfedezése",1 napos kirándulás. Ellátás nélkül.,eszterhazy-kastely,16000,0,16,false,,false
+5,2,Pécs török emlékei,"3 éjszaka 4*-os szállodában, reggelivel.",pecs,66000,56000,20,false,,true
+6,2,"Aggtelek, a Baradla-barlang rejtett szépségei",1 napos kirándulás. Ellátás nélkül. Az ajánlat a barlangba a belépőt tartalmazza.,aggteleki-barlang,22000,20000,14,false,,true
+7,2,Badacsony és a környező tanúhegyek,1 napos kirándulás. Ellátás nélkül.,badacsony ,14000,0,8,false,,true
+8,2,"Szalajka-völgy túra, Szilvásvárad",1 napos kirándulás. Ellátás nélkül.,szalajka,12000,0,14,false,,true
+9,2,Szegedi Szabadtéri Játékok,1 napos kirándulás. Ellátás nélkül.,szeged,16000,15000,26,false,,false
+10,2,A hortobágyi nemzeti park,1 napos kirándulás. Ellátás nélkül.,hortobagy,18000,17000,16,false,,true
+11,2,Esztergomi bazilika és Főszékegyházi kincstár,1 napos kirándulás. Ellátás nélkül.,esztergom,15000,14000,18,false,,true
+12,2,"Visegrád, a Dunakanyar fővárosa",1 napos kirándulás. Ellátás nélkül. Az ajánlat a várjátékokra a belépőt tartalmazza.,visegrad,18000,16000,15,true,extra,true
+13,2,"Tapolcai tavasbarlang, élményfürdőzés",1 napos kirándulás. Ellátás nélkül. Az ajánlat a fürdőbelépőt tartalmazza.,tapolca,18000,17000,14,false,,true
+14,2,"Hévízi-tó, az élet forrása","3 éjszaka 4*-os szállodában, reggelivel. Az ajánlat része egy Ön által választott masszázs (aromamasszázs, fej-, test-, láb- és hátmasszázs, relaxáló masszázs és lávaköves masszázs).",heviz,48000,44000,19,true,extra,true
+15,2,"Keszthely, az impozáns Festetics-kastély",1 napos kirándulás. Ellátás nélkül.,keszthely,17000,15000,12,false,,true
+16,2,Zempléni várak felfedezése,1 napos kirándulás. Ellátás nélkül.,zemplen,16000,0,18,false,,true
+17,2,Tihanyi levendula fesztivál,1 napos kirándulás. Ellátás nélkül. Kérjük mindenki saját metszőollót hozzon magával.,tihany,15000,0,22,false,,true
+18,2,"Szigetköz, az aktív túrázók paradicsoma",1 napos kirándulás. Ellátás nélkül.,szigetkoz,14000,0,26,false,,true
+19,2,"Andrássy-kastély, Tiszadob. A középkori lovagi kastélyok",1 napos kirándulás. Ellátás nélkül.,andrassy_kastely_tiszadob,13000,0,24,false,,true
+20,2,"Hollókő, húsvéti locsolkodás",1 napos kirándulás. Ellátás nélkül.,holloko,12000,0,15,false,,true
+21,2,Barangolás az Őrség legszebb tájain,1 napos kirándulás. Ellátás nélkül.,orseg,13000,0,16,false,,true
+22,2,"Édes Szentendre, Szamos marcipán kiállítás csokoládé kóstolással",1 napos kirándulás. Az ajánlat a múzeumi belépőt és a csokikóstolás díját tartalmazza.,szentendre,16000,0,26,true,extra,true
+23,2,Séta a középkori hangulatú Kőszegen,1 napos kirándulás. Ellátás nélkül.,koszeg,14000,0,24,false,,true
+24,2,"Hajdúszoboszló, az Alföld fürdővárosa","2 éjszaka 5*-os szállodában, félpanziós ellátással. Éjjeli élményfürdőzéssel. 2 fő részére.",hajduszoboszlo,98000,86000,17,true,extra,true
+25,2,Sástó-i csónakázás bográcsozással egybekötve,1 napos kirándulás.,sasto,15000,14000,50,false,,true
+26,1,Rodosz,Az utazás boldoggá tesz!,rodosz,220000,0,50,false,,false
+27,1,Kréta,Az utazás boldoggá tesz!,kreta,210000,0,50,false,,true
+28,1,Cinque Terre,Az utazás boldoggá tesz!,cinqueterre,185000,0,50,false,,true
+29,1,Szicília,Az utazás boldoggá tesz!,szicilia,330000,0,50,false,,true
+30,1,Capri,Az utazás boldoggá tesz!,capri,390000,310000,50,false,,true
+31,1,Isztria,Az utazás boldoggá tesz!,isztria,250000,180000,50,false,,true
+32,1,Dubrovnik,Az utazás boldoggá tesz!,dubrovnik,320000,240000,50,false,,true
+33,1,Firenze,Az utazás boldoggá tesz!,firenze,185000,160000,50,false,,false
+34,1,London,Az utazás boldoggá tesz!,london,390000,360000,50,false,,true
+35,1,Barcelona,Az utazás boldoggá tesz!,barcelona,249000,210000,50,false,,true
+36,1,Párizs,Az utazás boldoggá tesz!,parizs,275000,230000,50,false,,true
+37,1,Róma,Az utazás boldoggá tesz!,roma,210000,190000,50,false,,true
+38,1,Milánó,Az utazás boldoggá tesz!,milano,170000,0,50,false,,true
+39,1,Lisszabon,Az utazás boldoggá tesz!,lisszabon,160000,0,50,false,,true
+40,1,Bali,Az utazás boldoggá tesz!,bali,630000,550000,50,true,exotik,true
+41,1,St Lucia,Az utazás boldoggá tesz!,st_lucia,835000,790000,31,true,exotik,true
+42,1,Új-Zéland,Az utazás boldoggá tesz!,uj_zeland,945000,820000,31,true,exotik,true
+43,1,"Mézeshetek a paradicsomban, Bora Bora",Az utazás boldoggá tesz!,bora_bora,860000,780000,31,true,exotik,true
+44,1,Varázslatos utazás Thaiföldre,Az utazás boldoggá tesz!,thaifold,735000,690000,31,true,exotik,true
+45,1,Madrid,Az utazás boldoggá tesz!,madrid,269000,210000,22,false,,true
+46,1,"Disneyland, California",Legyen újra gyerek! A californiai Disneyland most mesés árakon elérhető. Tartson velünk!,disneyland,490000,430000,47,false,special,true
+47,1,Dubaj,Az utazás boldoggá tesz!,dubaj,425000,360000,36,false,,false
+48,1,New York,Az utazás boldoggá tesz!,newyork,795000,733000,45,false,special,true
+49,1,Narnia,Az utazás boldoggá tesz!,narnia,1320000,999999,44,false,special,true
+50,1,"Út az ismeretlenbe, Tatuin bolygó",Nyugalomra vágyik? Szeretne elvonulni a világ zajától? Utazás a Csillagok háborúja fiktív univerzumában. Végtelen sivatagi túrák. Találkozás a kumumgah őslakosok leszármazottaival. Az út csak oda szól.,tatuin,975000,888000,22,false,special,true
+51,1,"San Francisco, Tesla gyárlátogatás","Ön is a Tesla fanatikusok egyike? Érdekli a jövő, a fenntartható fejlődés? Utazzon velünk a tech-mogul gyárába! ",tesla_san_francisco,635000,0,33,false,special,true

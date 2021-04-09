@@ -1,0 +1,28 @@
+.card-title {
+    font-size: 1.5rem;
+    color: rgb(22, 102, 136);
+    font-weight: bold;
+}
+
+.product-price {
+    color: rgb(53, 58, 64);
+    // color: $mainGrey;
+}
+.product-salesprice{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: orangered;
+}
+
+.pricetrough {
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .carddetails{
+        flex-direction: column;
+    }
+    
+}

@@ -23,18 +23,25 @@ export class AdminComponent implements OnInit {
   }
 
   onUpdate(product: Product): void {
-    this.productService.update(product).subscribe();
+    this.productService.update(product).subscribe(() => {
+      this.productList$ = this.productService.getAll();
+    });
   }
 
   onDelete(product: Product): void {
-    this.productService.remove(product).subscribe()
+    this.productService.remove(product).subscribe(() => {
+      this.productList$ = this.productService.getAll();
+    })
   }
   onCreate(product: Product): void {
-    this.productService.update(product).subscribe();
+    this.productService.update(product).subscribe(() => {
+      this.productList$ = this.productService.getAll();
+    });
 
     this.productService.create({
-      "id": product.id + 1,
-      "catId": 0,
+      "_id": "",
+      "uid": product.uid + 1,
+      "catId": "",
       "name": "",
       "description": "",
       "image": "",
@@ -44,7 +51,9 @@ export class AdminComponent implements OnInit {
       "featured": false,
       "featured2": "",
       "active": true
-    }).subscribe()
+    }).subscribe(() => {
+      this.productList$ = this.productService.getAll();
+    })
   }
 
 }

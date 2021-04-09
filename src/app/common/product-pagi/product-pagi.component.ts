@@ -1,4 +1,3 @@
-
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/app/model/product';
 import { ProductService } from 'src/app/service/product.service';
@@ -13,7 +12,7 @@ export class ProductPagiComponent implements OnInit {
 
   index: number = 1;
   buttons: number[] = [];
-  @Input() products: Product[];
+  @Input() products: Product[] = [];
   @Input() productList: Product[] = [];
 
 
@@ -34,6 +33,7 @@ export class ProductPagiComponent implements OnInit {
   paginationNumber(array: Product[], pagi: number): Product[] {
     this.index = pagi;
     this.buttons = [];
+
     return array.slice((this.index - 1) * 5, this.index * 5);
   }
   paginationNext(array: Product[]): Product[] {

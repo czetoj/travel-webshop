@@ -44,26 +44,28 @@ body {
 /*Headlines*/
 
 [class^="headline"] {
-    background-attachment: fixed;
     box-shadow: $mainShadow;
-    height: 300px;
-    width: 100%;
 }
 
 .headline-home{    
-    background-image: url(../src/assets/img/800/home-head.jpg);
-    background-size: 180%;   
+    background-image: url(../src/assets/img/logo/map.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
 }
 
 .headline-local {
-    background-image: url(https://www.alwayswanderlust.com/wp-content/uploads/2016/11/Europe-Hungary-Budapest-Gelert-Hill-View-Panorama.jpg);
-    background-size: 193%;
+    background-image: url(../src/assets/img/logo/budapest.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
 }
 
 .headline-foreign {
-    background-image: url(https://techworld.hu/wp-content/uploads/2019/11/msf.png);
-    background-position: center top;
-    background-size: 138%;
+    background-image: url(../src/assets/img/logo/tropical.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
 }
 
 .logo{
@@ -92,13 +94,14 @@ body {
     background-color: #efefef;        
 }
 
-.card-img-top {
-    border-radius: 10px 10px 0 0;
-}
-
 .product-salesprice{
     font-size: 23px;
-    color: green;
+    font-weight: bold;
+    color: orangered;
+}
+
+.card-salesprice {
+    text-decoration: line-through;
 }
 
 .product-stock {
@@ -170,35 +173,8 @@ app-admin {
 }
 
 
-
-
-
-@media screen and (min-width: 768px) {
-    .headline-home {
-        background-size: 130%;
-    }
-    .headline-foreign {
-        background-size: 100%;
-    }
-    .headline-local {
-        background-size: 138%;
-    }
-    
-}
-
 @media screen and (min-width: 992px) {
-    [class^="headline"] {
-       height: 400px;  
-    }
-    .headline-home {
-        background-size: 100%;        
-    }
-    .headline-foreign {
-        background-size: 99%;
-    }
-    .headline-local {
-        background-size: 120%;
-    }
+    
     .logo {
         width: 25% !important;
     }
@@ -220,22 +196,8 @@ app-admin {
 }
 
 @media screen and (min-width: 1200px) {
-    .headline-home {
-        background-size: 100%;
-        background-position: 0 500%;
-    }
-    .headline-foreign {
-        background-size: 100%;
-        background-position: 0 150%;
-    }
-    .headline-local {
-        background-size: 138%;
-        background-position: 0 140%;
-    }
+    
     .logo{
         width: 20% !important
-    }
-    .card-img-top {
-        height: 170px;
     }
 }

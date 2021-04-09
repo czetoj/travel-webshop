@@ -4,7 +4,7 @@
       "id": 1,
       "catId": 2,
       "name": "Hosszú hétvége Budapesten",
-      "description": "3 éjszaka 4*-os szállodában,el.",
+      "description": "3 éjszaka 4*-os szállodában.",
       "image": "budapest",
       "price": 92000,
       "salesPrice": 82000,
@@ -17,7 +17,7 @@
       "id": 2,
       "catId": 2,
       "name": "Egri borkóstolás",
-      "description": "2 éjszaka 4*-os szállodában,ós ellátással. Szombati esti borkóstolással. 2 fő részére.",
+      "description": "2 éjszaka 4*-os szállodában, félpanziós ellátással. Szombati esti borkóstolással. 2 fő részére.",
       "image": "eger",
       "price": 66000,
       "salesPrice": 58000,
@@ -30,7 +30,7 @@
       "id": 3,
       "catId": 2,
       "name": "Sopron óvárosa és a Tűztorony",
-      "description": "2 éjszaka 5*-os szállodában,el. 2 fő részére.",
+      "description": "2 éjszaka 5*-os szállodában. 2 fő részére.",
       "image": "sopron",
       "price": 82000,
       "salesPrice": 72000,
@@ -42,7 +42,7 @@
     {
       "id": 4,
       "catId": 2,
-      "name": "Fertődi kirándulás,az Eszterházy-kastély felfedezése",
+      "name": "Fertődi kirándulás, az Eszterházy-kastély felfedezése",
       "description": "1 napos kirándulás. Ellátás nélkül.",
       "image": "eszterhazy-kastely",
       "price": 16000,
@@ -56,7 +56,7 @@
       "id": 5,
       "catId": 2,
       "name": "Pécs török emlékei",
-      "description": "3 éjszaka 4*-os szállodában,el.",
+      "description": "3 éjszaka 4*-os szállodában.",
       "image": "pecs",
       "price": 66000,
       "salesPrice": 56000,
@@ -68,7 +68,7 @@
     {
       "id": 6,
       "catId": 2,
-      "name": "Aggtelek,a-barlang rejtett szépségei",
+      "name": "Aggtelek, a Baradla-barlang rejtett szépségei",
       "description": "1 napos kirándulás. Ellátás nélkül. Az ajánlat a barlangba a belépőt tartalmazza.",
       "image": "aggteleki-barlang",
       "price": 22000,
@@ -94,7 +94,7 @@
     {
       "id": 8,
       "catId": 2,
-      "name": "Szalajka-völgy túra, Szilvásváradon",
+      "name": "Szalajka-völgy túra Szilvásváradon",
       "description": "1 napos kirándulás. Ellátás nélkül.",
       "image": "szalajka",
       "price": 13000,
@@ -136,7 +136,7 @@
       "name": "Esztergomi bazilika és Főszékegyházi kincstár",
       "description": "1 napos kirándulás. Ellátás nélkül.",
       "image": "esztergom",
-      "price": 15000,
+      "price": "150000",
       "salesPrice": 14000,
       "stock": 18,
       "featured": false,
@@ -159,7 +159,7 @@
     {
       "id": 13,
       "catId": 2,
-      "name": "Tapolcai tavasbarlang,rdőzés",
+      "name": "Tapolcai tavasbarlang, fürdőzés",
       "description": "1 napos kirándulás. Ellátás nélkül. Az ajánlat a fürdőbelépőt tartalmazza.",
       "image": "tapolca",
       "price": 18000,
@@ -172,8 +172,8 @@
     {
       "id": 14,
       "catId": 2,
-      "name": "Hévízi,forrása",
-      "description": "3 éjszaka 4*-os szállodában,el. Az ajánlat része egy Ön által választott masszázs (aromamasszázs,hátmasszázs, masszázs és lávaköves masszázs).",
+      "name": "Hévízi-tó, az egészség forrása",
+      "description": "3 éjszaka 4*-os szállodában. Az ajánlat része egy Ön által választott masszázs (aromamasszázs, hátmasszázs és lávaköves masszázs).",
       "image": "heviz",
       "price": 48000,
       "salesPrice": 44000,
@@ -185,7 +185,7 @@
     {
       "id": 15,
       "catId": 2,
-      "name": "Keszthely,áns Festetics-kastély",
+      "name": "Keszthely és a Festetics-kastély",
       "description": "1 napos kirándulás. Ellátás nélkül.",
       "image": "keszthely",
       "price": 17000,
@@ -237,7 +237,7 @@
     {
       "id": 19,
       "catId": 2,
-      "name": "Andrássy-kastély,. A középkori lovagi kastélyok",
+      "name": "Andrássy-kastély. A középkori lovagi kastélyok",
       "description": "1 napos kirándulás. Ellátás nélkül.",
       "image": "andrassy_kastely_tiszadob",
       "price": 13000,
@@ -250,7 +250,7 @@
     {
       "id": 20,
       "catId": 2,
-      "name": "Hollókő,locsolkodás",
+      "name": "Hollókő, locsolkodás",
       "description": "1 napos kirándulás. Ellátás nélkül.",
       "image": "holloko",
       "price": 12000,
@@ -276,7 +276,7 @@
     {
       "id": 22,
       "catId": 2,
-      "name": "Édes Szentendre,arcipán kiállítás csokoládé kóstolással",
+      "name": "Édes Szentendre, marcipán kiállítás csokoládé kóstolással",
       "description": "1 napos kirándulás. Az ajánlat a múzeumi belépőt és a csokikóstolás díját tartalmazza.",
       "image": "szentendre",
       "price": 16000,
@@ -302,8 +302,8 @@
     {
       "id": 24,
       "catId": 2,
-      "name": "Hajdúszoboszló,d fürdővárosa",
-      "description": "2 éjszaka 5*-os szállodában,ós ellátással. Éjjeli élményfürdőzéssel. 2 fő részére.",
+      "name": "Hajdúszoboszló, fürdőváros",
+      "description": "2 éjszaka 5*-os szállodában, félpanziós ellátással. Éjjeli élményfürdőzéssel. 2 fő részére.",
       "image": "hajduszoboszlo",
       "price": 98000,
       "salesPrice": 86000,
@@ -315,7 +315,7 @@
     {
       "id": 25,
       "catId": 2,
-      "name": "Sástó-i csónakázás bográcsozással egybekötve",
+      "name": "Sástói csónakázás bográcsozással egybekötve",
       "description": "1 napos kirándulás.",
       "image": "sasto",
       "price": 15000,
@@ -549,7 +549,7 @@
     {
       "id": 43,
       "catId": 1,
-      "name": "Mézeshetek a paradicsomban,a",
+      "name": "Mézeshetek a paradicsomban",
       "description": "Az utazás boldoggá tesz!",
       "image": "bora_bora",
       "price": 860000,
@@ -588,8 +588,8 @@
     {
       "id": 46,
       "catId": 1,
-      "name": "Disneyland,ia",
-      "description": "Legyen újra gyerek! A californiai Disneyland most mesés árakon elérhető. Tartson velünk!",
+      "name": "Disneyland, Kalifornia",
+      "description": "Legyen újra gyerek! A kaliforniai Disneyland most mesés árakon elérhető. Tartson velünk!",
       "image": "disneyland",
       "price": 490000,
       "salesPrice": 430000,
@@ -640,7 +640,7 @@
     {
       "id": 50,
       "catId": 1,
-      "name": "Út az ismeretlenbe,olygó",
+      "name": "Út az ismeretlenbe, Tatuin bolygó",
       "description": "Nyugalomra vágyik? Szeretne elvonulni a világ zajától? Utazás a Csillagok háborúja fiktív univerzumában. Végtelen sivatagi túrák. Találkozás a kumumgah őslakosok leszármazottaival. Az út csak oda szól.",
       "image": "tatuin",
       "price": 975000,
@@ -654,7 +654,7 @@
       "id": 51,
       "catId": 1,
       "name": "San Francisco, gyárlátogatás",
-      "description": "Ön is a Tesla fanatikusok egyike? Érdekli a jövő,rtható fejlődés? Utazzon velünk a tech-mogul gyárába!",
+      "description": "Ön is a Tesla fanatikusok egyike? Érdekli a jövő, a fenntartható fejlődés? Utazzon velünk a tech-mogul gyárába!",
       "image": "tesla_san_francisco",
       "price": "635000",
       "salesPrice": 0,
@@ -666,7 +666,7 @@
     {
       "id": 52,
       "catId": 0,
-      "name": "Lolozsvár",
+      "name": "Kolozsvár",
       "description": "4 nap",
       "image": "kolozsvar",
       "price": "1000",
@@ -688,6 +688,21 @@
       "featured": false,
       "featured2": "",
       "active": true
+    },
+    {
+      "_id": "",
+      "uid": null,
+      "catId": "",
+      "name": "",
+      "description": "",
+      "image": "",
+      "price": 0,
+      "salesPrice": 0,
+      "stock": 0,
+      "featured": false,
+      "featured2": "",
+      "active": true,
+      "id": 54
     }
   ]
 }

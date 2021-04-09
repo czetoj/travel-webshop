@@ -24,6 +24,7 @@ import { SalesPipe } from './pipe/sales.pipe';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 import { LastproductnovisiblePipe } from './pipe/lastproductnovisible.pipe';
 import { UniversalFilterPipe } from './pipe/universal-filter.pipe';
+import { CardDetailsComponent } from './common/card-details/card-details.component';
 
 
 
@@ -51,6 +52,7 @@ import { UniversalFilterPipe } from './pipe/universal-filter.pipe';
     DataEditorComponent,
     LastproductnovisiblePipe,
     UniversalFilterPipe,
+    CardDetailsComponent,
   ],
   imports: [
     BrowserModule,

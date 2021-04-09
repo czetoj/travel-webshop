@@ -12,7 +12,7 @@ export interface ITableCol {
 export class ConfigTableService {
 
   tableCols: ITableCol[] = [
-    { key: "id", text: "#", editable: false },
+    { key: "uid", text: "#", editable: false },
     { key: "catId", text: "CatId", editable: true },
     { key: "name", text: "Name", editable: true },
     { key: "description", text: "Description", editable: true },

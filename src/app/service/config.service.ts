@@ -14,11 +14,11 @@ export class ConfigService {
   appName: string = 'Nyolcas Terminál';
 
   menuItems: IMenuItem[] = [
-    { text: 'Home', link: '/', icon: 'home' },
-    { text: 'Külföldi utak', link: '/kulfoldi-utak' },
-    { text: 'Belföldi utak', link: '/belfoldi-utak' },
-    { text: 'Kapcsolat', link: '/kapcsolat' },
-    { text: 'Admin', link: '/admin' },
+    { text: 'Home', link: '/travel-webshop', icon: 'home' },
+    { text: 'Külföldi utak', link: '/travel-webshop/kulfoldi-utak' },
+    { text: 'Belföldi utak', link: '/travel-webshop/belfoldi-utak' },
+    { text: 'Kapcsolat', link: '/travel-webshop/kapcsolat' },
+    { text: 'Admin', link: '/travel-webshop/admin' },
   ];
 
   constructor() { }

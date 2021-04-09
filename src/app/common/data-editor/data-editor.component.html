@@ -57,7 +57,7 @@
                 </thead>
                 <tbody>
                     <tr
-                        *ngFor="let product of paginationNumber(productList$ | async | lastproductnovisible | universalFilter:filterKey:phrase | sort:sortKey, index)">
+                        *ngFor="let product of paginationNumber(productList | lastproductnovisible | universalFilter:filterKey:phrase | sort:sortKey, index)">
                         <td *ngFor="let col of cols">
                             <input class="col-12" *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text">
                             <span *ngIf="!col.editable">{{product[col.key]}}</span>
@@ -88,10 +88,10 @@
     <div>
         <button class="btn btn-outline-dark" (click)="paginationBack(productList)">Vissza</button>
 
-        <li class="btn"
+        <button class="btn btn-outline-dark"
             *ngFor="let button of buttonsNumberArray(productList$ | async | lastproductnovisible | universalFilter:filterKey:phrase | sort:sortKey)"
-            [class.active]="index === button"><a (click)="paginationNumber(productList, button)">{{button}}</a>
-        </li>
+            [class.active]="index === button" (click)="paginationNumber(productList, button)">{{button}}
+        </button>
         <button class="btn btn-outline-dark" (click)="paginationNext(productList)">Előre</button>
     </div>
 
